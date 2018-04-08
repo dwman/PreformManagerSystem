@@ -14,7 +14,7 @@
         android:id="@+id/gv_function"
         android:horizontalSpacing="20dp"
         android:numColumns="3"
-        android:verticalSpacing="80dp"
+        android:verticalSpacing="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

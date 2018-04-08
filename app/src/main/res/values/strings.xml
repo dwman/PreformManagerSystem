@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PreformManageSystem</string>
+    <string name="login_title">智慧预制件物联网管理系统</string>
+    <string name="login">登录</string>
+    <string name="password">密码 :</string>
+    <string name="user">账号 :</string>
 </resources>
