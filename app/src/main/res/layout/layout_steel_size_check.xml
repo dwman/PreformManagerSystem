@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="钢筋网和钢筋成品（骨架）尺寸检查"
+        android:textColor="@color/text_title"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--检查项-->
+            <View
+                android:background="@color/cell_bg_black"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <include layout="@layout/table_item_start" />
+            <!--绑扎钢筋网1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:gravity="center"
+                    android:text="绑扎钢筋网" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="长" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item1_line1_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item1_line1_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="宽" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item1_line2_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item1_line2_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="网眼尺寸" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item1_line3_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item1_line3_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--绑扎钢筋骨架2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:gravity="center"
+                    android:text="绑扎钢筋骨架" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="长" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item2_line1_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item2_line1_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="宽" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item2_line2_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item2_line2_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="高" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item2_line3_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item2_line3_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--受力钢筋3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:gravity="center"
+                    android:text="受力钢筋" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="间距" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item3_line1_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item3_line1_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="排距" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="±5" />
+
+                        <EditText
+                            android:id="@+id/et_item3_line2_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item3_line2_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--保护层4-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_cell_height"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="保护层"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:text="±3"
+                    style="@style/TableCellStyle" />
+
+                <EditText
+                    android:id="@+id/et_item4_line1_offset"
+                    style="@style/TableCellEditTextStyle" />
+
+                <EditText
+                    android:id="@+id/et_item4_line1_remarks"
+                    style="@style/TableCellStyle" />
+
+
+            </LinearLayout>
+            <!--绑扎钢筋、横向钢筋间距5-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_cell_height"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="绑扎钢筋、横向钢筋间距"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:text="±5"
+                    style="@style/TableCellStyle" />
+
+                <EditText
+                    android:id="@+id/et_item5_line1_offset"
+                    style="@style/TableCellEditTextStyle" />
+
+                <EditText
+                    android:id="@+id/et_item5_line1_remarks"
+                    style="@style/TableCellStyle" />
+
+
+            </LinearLayout>
+            <!--钢筋弯起点位置6-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_cell_height"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:text="钢筋弯起点位置"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:text="20"
+                    style="@style/TableCellStyle" />
+
+                <EditText
+                    android:id="@+id/et_item6_line1_offset"
+                    style="@style/TableCellEditTextStyle" />
+
+                <EditText
+                    android:id="@+id/et_item6_line1_remarks"
+                    style="@style/TableCellStyle" />
+
+
+            </LinearLayout>
+            <!--预埋套筒7-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:gravity="center"
+                    android:text="受力钢筋" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="中心线位置" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="2" />
+
+                        <EditText
+                            android:id="@+id/et_item7_line1_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item7_line1_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_cell_height"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="高差(砼面)" />
+
+                        <TextView
+                            style="@style/TableCellStyle"
+                            android:text="0,5" />
+
+                        <EditText
+                            android:id="@+id/et_item7_line2_offset"
+                            style="@style/TableCellEditTextStyle" />
+
+                        <EditText
+                            android:id="@+id/et_item7_line2_remarks"
+                            style="@style/TableCellStyle" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:background="@color/cell_bg_black"
+                android:layout_width="match_parent"
+                android:layout_height="1px"/>
+            <!-- 检查人员签字：-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_cell_height">
+                <TextView
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:gravity="center"
+                    android:text="检查人员签字"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:id="@+id/et_check_name"
+                    android:background="@drawable/item_cell_bg_normal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+                
+            <!--  检查时间：-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_cell_height">
+                <TextView
+                    android:background="@drawable/item_cell_bg_selected"
+                    android:gravity="center"
+                    android:text="检查时间"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"/>
+                <EditText
+                    android:inputType="date"
+                    android:id="@+id/et_check_time"
+                    android:background="@drawable/item_cell_bg_normal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="base_bg">#E4E4E4</color>
+    <color name="item_cell_bg">#CCCCCC</color>
+    <color name="cell_bg_black">#000</color>
+    <color name="item_cell_white">#fff</color>
+    <color name="text_title">#000</color>
+    <color name="cell_bg_gray">#66000000</color>
+    
+    <color name="bolder">#6F7885</color>
+    <color name="menu_start_color">#0F6EFD</color>
+    <color name="menu_start_end">#BFD0E9</color>
+
+    <color name="login_btn">#0066FF</color>
+    <color name="login_title">#6699FF</color>
+    <color name="login_btn_gray">#CCCCCC</color>
+</resources>
