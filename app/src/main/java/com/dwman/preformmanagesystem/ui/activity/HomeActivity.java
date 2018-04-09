@@ -2,6 +2,7 @@ package com.dwman.preformmanagesystem.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +12,10 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.dwman.preformmanagesystem.R;
+import com.dwman.preformmanagesystem.app.Constant;
 import com.dwman.preformmanagesystem.ui.base.BaseActivity;
 import com.dwman.preformmanagesystem.user.UserContext;
+import com.dwman.preformmanagesystem.utils.SPUtils;
 
 public class HomeActivity extends BaseActivity {
 
@@ -33,35 +36,42 @@ public class HomeActivity extends BaseActivity {
 
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        initData();
+    }
+
     private void initListener() {
         mGvFunctionMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        UserContext.getUserContext().qualityTrace();
+                        UserContext.getUserContext().qualityTrace(HomeActivity.this);
 
                         break;
                     case 1:
-                        UserContext.getUserContext().contractManage();
+                        UserContext.getUserContext().contractManage(HomeActivity.this);
                         break;
                     case 2:
-                        UserContext.getUserContext().productionManage();
+                        UserContext.getUserContext().productionManage(HomeActivity.this);
                         break;
                     case 3:
-                        UserContext.getUserContext().storageManage();
+                        UserContext.getUserContext().storageManage(HomeActivity.this);
                         break;
                     case 4:
-                        UserContext.getUserContext().lifeCycleManage();
+                        UserContext.getUserContext().lifeCycleManage(HomeActivity.this);
                         break;
                     case 5:
-                        UserContext.getUserContext().projectSetting();
+                        UserContext.getUserContext().projectSetting(HomeActivity.this);
                         break;
                     case 6:
-                        UserContext.getUserContext().systemSetting();
+                        UserContext.getUserContext().systemSetting(HomeActivity.this);
                         break;
                     case 7:
-                        UserContext.getUserContext().personalSetting();
+                        UserContext.getUserContext().personalSetting(HomeActivity.this);
                         break;
 
                 }
@@ -70,8 +80,7 @@ public class HomeActivity extends BaseActivity {
     }
 
     private void initData() {
-//        startActivity(new Intent(this,LoginActivity.class));
-
+        getUserInfoCache();
     }
 
     private void initView() {

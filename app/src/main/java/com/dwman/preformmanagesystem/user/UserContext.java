@@ -38,18 +38,16 @@ public class UserContext extends BaseUser {
         this.currentStatus = currentStatus;
     }
 
-    public int currentStatus ;
+
 
     private BaseUser baseUser = new Guest() ;
 
     /**
      * 设置当前的用户
      * @param baseUser
-     * @param status 用户的等级
      */
-    public void setiUser(BaseUser baseUser, int status) {
+    public void setUser(BaseUser baseUser) {
         this.baseUser = baseUser;
-        this.currentStatus = status;
     }
     private static UserContext mUserContext;
     private UserContext (){}

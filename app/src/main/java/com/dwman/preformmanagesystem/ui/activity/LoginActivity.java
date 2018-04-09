@@ -7,14 +7,12 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.dwman.preformmanagesystem.R;
+import com.dwman.preformmanagesystem.app.Constant;
 import com.dwman.preformmanagesystem.ui.base.BaseActivity;
+import com.dwman.preformmanagesystem.utils.SPUtils;
 import com.dwman.preformmanagesystem.utils.T;
-
-import org.w3c.dom.Text;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -59,13 +57,20 @@ public class LoginActivity extends BaseActivity {
                 super.run();
 
                 SystemClock.sleep(2000);
+
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+
+                        mProgressDialog.dismiss();
                         if (TextUtils.equals(userName,"ldw") && TextUtils.equals(pwd,"123")){
                             T.showShort(LoginActivity.this,"登陆成功");
 
-                            mProgressDialog.dismiss();
+
+                            int status = (int) (Math.random() * 3 +1);
+                            String info = userName+"#"+pwd+"#"+status;
+                            SPUtils.put(LoginActivity.this, Constant.USER_INFO,info);
+
                             startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                             finish();
 

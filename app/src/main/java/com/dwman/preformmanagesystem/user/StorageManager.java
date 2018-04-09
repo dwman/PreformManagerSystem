@@ -3,10 +3,10 @@ package com.dwman.preformmanagesystem.user;
 import android.content.Context;
 
 /**
- * Created by ldw on 2018/4/8.
+ * Created by ldw on 2018/4/9.
  */
 
-public class WorkshopManager extends BaseUser {
+public class StorageManager extends BaseUser {
     @Override
     public void qualityTrace(Context context) {
         showToast("WorkshopManager qualityTrace");
