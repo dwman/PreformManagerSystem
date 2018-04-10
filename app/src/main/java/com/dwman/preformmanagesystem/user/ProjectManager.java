@@ -14,44 +14,45 @@ public class ProjectManager extends BaseUser {
     private static final String TAG = "ProjectManager";
     @Override
     public void qualityTrace(Context context) {
-        L.i(TAG,"qualityTrace");
 
-        showToast("ProjectManager qualityTrace");
+//        showToast("ProjectManager qualityTrace");
+        qualityTraceForDetail(context);
     }
 
     @Override
     public void contractManage(Context context) {
-        L.i(TAG,"contractManage");
-        showToast("ProjectManager contractManage");
+//        showToast("ProjectManager contractManage");
+        contractManageForDetail(context);
     }
 
     @Override
     public void productionManage(Context context) {
-        L.i(TAG,"productionManage");
-        showToast("ProjectManager productionManage");
+//        showToast("ProjectManager productionManage");
+        productionManageForDetail(context);
     }
 
     @Override
     public void storageManage(Context context) {
-        L.i(TAG,"storageManage");
-        showToast("ProjectManager storageManage");
+//        showToast("ProjectManager storageManage");
+        storageManageForDetail(context);
     }
 
     @Override
     public void tracingManage(Context context) {
-        L.i(TAG,"tracingManage");
-        showToast("ProjectManager tracingManage");
+//        showToast("ProjectManager tracingManage");
+        tracingManageForDetail(context);
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
-       showToast("没有此权限");
+    public void statisticsManage(Context context) {
+//       showToast("没有此权限");
+        statisticsManageForDetail(context);
     }
 
     @Override
-    public void projectSetting(Context context) {
-        L.i(TAG,"projectSetting");
-        showToast("ProjectManager projectSetting");
+    public void StockCheckManage(Context context) {
+//        showToast("ProjectManager StockCheckManage");
+        StockCheckManageForDetail(context);
     }
 
     @Override

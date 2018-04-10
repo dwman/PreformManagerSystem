@@ -34,12 +34,12 @@ public class Guest extends BaseUser {
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
+    public void statisticsManage(Context context) {
         login(context);
     }
 
     @Override
-    public void projectSetting(Context context) {
+    public void StockCheckManage(Context context) {
         login(context);
     }
 

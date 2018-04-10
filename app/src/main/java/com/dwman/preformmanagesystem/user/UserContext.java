@@ -99,18 +99,18 @@ public class UserContext extends BaseUser {
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
+    public void statisticsManage(Context context) {
         if (baseUser != null) {
-            baseUser.lifeCycleManage(context);
+            baseUser.statisticsManage(context);
         }else {
             L.i(TAG,"user is null");
         }
     }
 
     @Override
-    public void projectSetting(Context context) {
+    public void StockCheckManage(Context context) {
         if (baseUser != null) {
-            baseUser.projectSetting(context);
+            baseUser.StockCheckManage(context);
         }else {
             L.i(TAG,"user is null");
         }

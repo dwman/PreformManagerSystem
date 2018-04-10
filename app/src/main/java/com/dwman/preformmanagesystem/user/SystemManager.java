@@ -2,6 +2,8 @@ package com.dwman.preformmanagesystem.user;
 
 import android.content.Context;
 
+import java.security.KeyStore;
+
 /**
  * Created by ldw on 2018/4/8.
  */
@@ -9,42 +11,50 @@ import android.content.Context;
 public class SystemManager extends BaseUser {
     @Override
     public void qualityTrace(Context context) {
-        showToast("SystemManager  qualityTrace");
+//        showToast("SystemManager  qualityTrace");
+        qualityTraceForDetail(context);
     }
 
     @Override
     public void contractManage(Context context) {
-        showToast("SystemManager  contractManage");
+//        showToast("SystemManager  contractManage");
+        contractManageForDetail(context);
     }
 
     @Override
     public void productionManage(Context context) {
-        showToast("SystemManager  productionManage");
+//        showToast("SystemManager  productionManage");
+        productionManageForDetail(context);
     }
 
     @Override
     public void storageManage(Context context) {
-        showToast("SystemManager  storageManage");
+//        showToast("SystemManager  storageManage");
+        storageManageForDetail(context);
     }
 
     @Override
     public void tracingManage(Context context) {
-        showToast("SystemManager  tracingManage");
+//        showToast("SystemManager  tracingManage");
+        tracingManageForDetail(context);
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
-        showToast("SystemManager  lifeCycleManage");
+    public void statisticsManage(Context context) {
+//        showToast("SystemManager  statisticsManage");
+        statisticsManageForDetail(context);
     }
 
     @Override
-    public void projectSetting(Context context) {
-        showToast("SystemManager  projectSetting");
+    public void StockCheckManage(Context context) {
+//        showToast("SystemManager  StockCheckManage");
+        storageManageForDetail(context);
     }
 
     @Override
     public void systemSetting(Context context) {
-        showToast("SystemManager  systemSetting");
+//        showToast("SystemManager  systemSetting");
+        systemSettingForDetail(context);
 
     }
 

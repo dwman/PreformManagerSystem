@@ -33,12 +33,12 @@ public class QualityInspector extends BaseUser {
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
+    public void statisticsManage(Context context) {
 
     }
 
     @Override
-    public void projectSetting(Context context) {
+    public void StockCheckManage(Context context) {
 
     }
 

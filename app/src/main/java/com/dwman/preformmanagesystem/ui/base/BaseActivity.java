@@ -75,7 +75,6 @@ public class BaseActivity extends AppCompatActivity {
         mPassword = infos[1];
 
          baseUser = UserFactory.createNewUser(mCurrentStatus);
-
         UserContext.getUserContext().setUser(baseUser);
 
 

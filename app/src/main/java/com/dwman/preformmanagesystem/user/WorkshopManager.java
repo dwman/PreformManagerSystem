@@ -34,13 +34,13 @@ public class WorkshopManager extends BaseUser {
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
+    public void statisticsManage(Context context) {
         showToast("WorkshopManager 没有此权限");
     }
 
     @Override
-    public void projectSetting(Context context) {
-        showToast("WorkshopManager projectSetting");
+    public void StockCheckManage(Context context) {
+        showToast("WorkshopManager StockCheckManage");
     }
 
     @Override

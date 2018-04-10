@@ -9,43 +9,46 @@ import android.content.Context;
 public class StorageManager extends BaseUser {
     @Override
     public void qualityTrace(Context context) {
-        showToast("WorkshopManager qualityTrace");
+        showToast("StorageManager qualityTrace");
     }
 
     @Override
     public void contractManage(Context context) {
-        showToast("WorkshopManager contractManage");
+//        showToast("WorkshopManager contractManage");
+        contractManageForDetail(context);
     }
 
     @Override
     public void productionManage(Context context) {
-        showToast("WorkshopManager 没有此权限");
+        showToast("StorageManager 没有此权限");
 
     }
 
     @Override
     public void storageManage(Context context) {
-        showToast("WorkshopManager storageManage");
+        showToast("StorageManager storageManage");
     }
 
     @Override
     public void tracingManage(Context context) {
-        showToast("WorkshopManager 没有此权限");
+        showToast("StorageManager 没有此权限");
     }
 
     @Override
-    public void lifeCycleManage(Context context) {
-        showToast("WorkshopManager 没有此权限");
+    public void statisticsManage(Context context) {
+//        showToast("WorkshopManager 没有此权限");
+        statisticsManageForDetail(context);
     }
 
     @Override
-    public void projectSetting(Context context) {
-        showToast("WorkshopManager projectSetting");
+    public void StockCheckManage(Context context) {
+//        showToast("WorkshopManager StockCheckManage");
+        storageManageForDetail(context);
     }
 
     @Override
     public void systemSetting(Context context) {
-        showToast("WorkshopManager 没有此权限");
+        showToast(" 没有此权限");
     }
 
     @Override

@@ -17,9 +17,9 @@ public interface IUser {
 
     void tracingManage(Context context);
 
-    void lifeCycleManage(Context context);
+    void statisticsManage(Context context);
 
-    void projectSetting(Context context);
+    void StockCheckManage(Context context);
 
     void systemSetting(Context context);
 

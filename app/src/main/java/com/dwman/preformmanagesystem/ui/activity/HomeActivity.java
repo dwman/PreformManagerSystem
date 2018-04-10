@@ -2,7 +2,6 @@ package com.dwman.preformmanagesystem.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,16 +11,14 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.dwman.preformmanagesystem.R;
-import com.dwman.preformmanagesystem.app.Constant;
 import com.dwman.preformmanagesystem.ui.base.BaseActivity;
 import com.dwman.preformmanagesystem.user.UserContext;
-import com.dwman.preformmanagesystem.utils.SPUtils;
 
 public class HomeActivity extends BaseActivity {
 
     private GridView mGvFunctionMenu;
-    String[] functions = {"质量追溯管理","合同管理","生产管理"
-            ,"仓库管理","生命周期管理","项目设置","系统管理","个人中心"};
+    String[] functions = {"质量追溯","合同管理","生产管理"
+            ,"仓库管理","溯源管理","统计管理","盘点管理","系统管理","个人中心"};
     private BaseAdapter mAdapter;
     private LayoutInflater mLayoutInflater;
 
@@ -50,7 +47,6 @@ public class HomeActivity extends BaseActivity {
                 switch (position){
                     case 0:
                         UserContext.getUserContext().qualityTrace(HomeActivity.this);
-
                         break;
                     case 1:
                         UserContext.getUserContext().contractManage(HomeActivity.this);
@@ -62,15 +58,18 @@ public class HomeActivity extends BaseActivity {
                         UserContext.getUserContext().storageManage(HomeActivity.this);
                         break;
                     case 4:
-                        UserContext.getUserContext().lifeCycleManage(HomeActivity.this);
+                        UserContext.getUserContext().tracingManage(HomeActivity.this);
                         break;
                     case 5:
-                        UserContext.getUserContext().projectSetting(HomeActivity.this);
+                        UserContext.getUserContext().statisticsManage(HomeActivity.this);
                         break;
                     case 6:
-                        UserContext.getUserContext().systemSetting(HomeActivity.this);
+                        UserContext.getUserContext().StockCheckManage(HomeActivity.this);
                         break;
                     case 7:
+                        UserContext.getUserContext().systemSetting(HomeActivity.this);
+                        break;
+                    case 8:
                         UserContext.getUserContext().personalSetting(HomeActivity.this);
                         break;
 

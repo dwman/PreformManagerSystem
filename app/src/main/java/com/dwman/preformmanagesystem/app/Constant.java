@@ -19,7 +19,8 @@ public class Constant {
     public static final int FRAGMENT_PRODUCTION =0x02;
     public static final int FRAGMENT_STORAGE =0x03;
     public static final int FRAGMENT_CONTRACT =0x04;
-    public static final int FRAGMENT_LIFECYCLE =0x05;
+    public static final int FRAGMENT_TRACING =0x05;
     public static final int FRAGMENT_SYSTEM =0x06;
-    public static final int FRAGMENT_PROJECTION =0x07;
+    public static final int FRAGMENT_STATISTICS =0x07;
+    public static final int FRAGMENT_STOCK_CHECK =0x08;
 }

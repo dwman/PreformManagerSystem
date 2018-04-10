@@ -28,7 +28,6 @@ public abstract class BaseUser implements IUser{
         Intent intent = new Intent();
         intent.setClass(context,SettingActivity.class);
         context.startActivity(intent);
-//        ((AppCompatActivity)context).finish();
         }
     }
 
@@ -64,21 +63,21 @@ public abstract class BaseUser implements IUser{
         context.startActivity(intent);
     }
 
-/*    protected void tracingManageForDetail(Context context) {
+    protected void tracingManageForDetail(Context context) {
         Intent intent =createIntent(context);
-        intent.putExtra(Constant.FRAGMENT_KEY,Constant.FRAGMENT_QUALITY);
-        context.startActivity(intent);
-    }*/
-
-    protected void lifeCycleManageForDetail(Context context) {
-        Intent intent =createIntent(context);
-        intent.putExtra(Constant.FRAGMENT_KEY,Constant.FRAGMENT_LIFECYCLE);
+        intent.putExtra(Constant.FRAGMENT_KEY,Constant.FRAGMENT_TRACING);
         context.startActivity(intent);
     }
 
-    protected void projectSettingForDetail(Context context) {
+    protected void statisticsManageForDetail(Context context) {
         Intent intent =createIntent(context);
-        intent.putExtra(Constant.FRAGMENT_KEY,Constant.FRAGMENT_PROJECTION);
+        intent.putExtra(Constant.FRAGMENT_KEY,Constant.FRAGMENT_STATISTICS);
+        context.startActivity(intent);
+    }
+
+    protected void StockCheckManageForDetail(Context context) {
+        Intent intent =createIntent(context);
+        intent.putExtra(Constant.FRAGMENT_KEY,Constant.FRAGMENT_STOCK_CHECK);
         context.startActivity(intent);
     }
 

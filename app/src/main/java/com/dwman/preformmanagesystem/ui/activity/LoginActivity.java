@@ -49,7 +49,7 @@ public class LoginActivity extends BaseActivity {
         }
 
 
-        mProgressDialog = ProgressDialog.show(this,null,"正在登陆。。。",false,false);
+        mProgressDialog = ProgressDialog.show(this,null,"正在登陆...",false,false);
 
         new Thread(){
             @Override
